@@ -1,7 +1,54 @@
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: currentColor;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 body {
@@ -9,11 +56,16 @@ body {
   line-height: 1.5;
 
   --primary-text-color: #181820;
-  --secondary-text-color: #5c5c62;
+  --secondary-text-color: #22222f;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
-  --border-color: #ff9a0045;
-  --text-decoration-color: #ff9a00;
+  --border-color: rgb(174, 101, 160);
+  --text-decoration-color: rgb(154, 85, 140);
+  --bg_primary: linear-gradient(
+    252.34deg,
+    rgba(241, 184, 210, 0.74) -4.03%,
+    rgba(149, 187, 233, 0.79) 112.41%
+  );
 }
 
 .container {
@@ -25,7 +77,7 @@ body {
 .fh {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .fv {
@@ -34,12 +86,17 @@ body {
   justify-content: space-between;
 }
 
+svg {
+  fill: currentColor;
+}
+
 .resume {
   margin: 50px auto;
   border: 1px solid #f5f5f5;
   box-shadow: 1px 1px 7px 7px #f5f5f5;
   padding: 30px 0;
   max-width: 900px;
+  background: var(--bg_primary);
 }
 
 .resume__block {
@@ -88,6 +145,28 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.contact-info__list-item {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.contact-info__link:hover,
+.contact-info__link:focus {
+  color: var(--text-decoration-color);
+}
+
+.contact-info__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .contact-info__block--center {
