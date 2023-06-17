@@ -399,3 +399,22 @@ color: var(--durability-text-color);
     color: rgb(154, 85, 140);
   }
 }
+
+.project__list li {
+  margin-top: 10px;
+}
+
+.project__list h4{
+  margin-bottom: 10px;
+  text-decoration: underline;
+  max-width: 100px;
+  color:#c3236b;
+}
+
+.project__list li:last-child {
+  margin-bottom: 10px;
+}
+
+.project__list h4:hover {
+  color: rgb(20, 212, 212);
+}
