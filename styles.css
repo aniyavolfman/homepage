@@ -57,8 +57,8 @@ body {
 
   --primary-text-color: #181820;
   --secondary-text-color: #22222f;
-  --durability-text-color: #6a737d9c;
-  --icon-color: #6a737d;
+  --durability-text-color: rgb(153, 16, 151);
+  --icon-color: #0c75ee;
   --border-color: rgb(174, 101, 160);
   --text-decoration-color: rgb(154, 85, 140);
   --bg_primary: linear-gradient(
@@ -246,6 +246,36 @@ svg {
   text-align: justify;
 }
 
+.skills__wrapper {
+  text-align: center;
+}
+
+.skills__type {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.skills__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-left: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .skills__list {
+    max-height: 150px;
+  }
+}
+
+.skills__list li {
+  list-style-type: circle;
+}
+
 .experiences {
   flex: 1 1 60%;
   margin-right: 50px;
@@ -295,6 +325,15 @@ svg {
   padding-left: 20px;
 }
 
+.experiences__link {
+  display: inline;
+  text-decoration: underline;
+}
+
+.experiences__link:hover {
+color: var(--durability-text-color);
+}
+
 .additional-info {
   flex: 1 1 40%;
 }
@@ -312,14 +351,15 @@ svg {
 .additional-info__education-university-durability {
   color: var(--durability-text-color);
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 15px;
+  margin-top: 10px;
 }
 
 .additional-info__education-university-speciality {
   color: var(--primary-text-color);
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .additional-info__education-university-name {
@@ -333,9 +373,28 @@ svg {
 .additional-info__languages-header {
   color: var(--secondary-text-color);
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+.animation__color {
+  animation: colorChange 3s infinite;
+  color: var(--primary-text-color);
+}
+
+@keyframes colorChange {
+  0% {
+    color: #c3236b;
+  }
+
+  50% {
+    color: rgb(20, 212, 212);
+  }
+
+  100% {
+    color: rgb(154, 85, 140);
+  }
 }
