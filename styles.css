@@ -92,7 +92,7 @@ svg {
 }
 
 .resume {
-  margin: 50px auto;
+  margin: 0 auto;
   border: 1px solid #f5f5f5;
   box-shadow: 1px 1px 7px 7px #f5f5f5;
   padding: 30px 0;
@@ -123,6 +123,33 @@ svg {
   .experiences {
     margin-right: 0;
   }
+}
+
+.header__container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.header__container {
+  margin: 0 auto;
+}
+
+.header__container nav {
+  display: flex;
+  justify-content: center;
+}
+
+.header_list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header__link:hover {
+  color: var(--durability-text-color);
 }
 
 .contact-info__header,
@@ -267,10 +294,43 @@ svg {
   margin-left: 50px;
 }
 
+.anchor {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .skills__list {
     max-height: 150px;
   }
+
+    .anchor {
+      z-index: 3;
+      position: fixed;
+      display: flex;
+      right: 30px;
+      bottom: 30px;
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 1px solid #f1b8d2;
+      letter-spacing: 0.06em;
+      line-height: 1.88;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: inherit;
+      font-weight: bold;
+      transition-property: all;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    .anchor:hover,
+    .anchor:focus {
+      background-color: #f1b8d2;
+      border: 1px solid #fff;
+    }
 }
 
 .skills__list li {
@@ -497,3 +557,4 @@ justify-content: center;
 align-items: center;
 padding: 10px;
 }
+

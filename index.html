@@ -18,7 +18,40 @@
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
+    <header class="header" id="up">
+      <div class="header__container">
+        <nav>
+          <ul class="header_list">
+            <li class="header_list-item">
+              <a href="#intro" class="header__link">Intro</a>
+            </li>
+            <li class="header_list-item">
+              <a href="#skills-container" class="header__link">Skills</a>
+            </li>
+            <li class="header_list-item">
+              <a href="#experiences" class="header__link">Experience</a>
+            </li>
+            <li class="header_list-item">
+              <a href="#education" class="header__link">Education</a>
+            </li>
+            <li class="header_list-item">
+              <a href="#languages" class="header__link">Languages</a>
+            </li>
+            <li class="header_list-item">
+              <a href="#project-experiences" class="header__link">Project experience</a>
+            </li>
+            <li class="header_list-item">
+              <a href="#additional-education" class="header__link">Additional education</a>
+            </li>
+            <li class="header_list-item">
+              <a href="#timeline" class="header__link">Timeline</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
+      <div><a href="#up" class="anchor link">Up!</a></div>
       <div class="resume">
         <div class="container">
           <div class="resume__block">
@@ -121,7 +154,7 @@
               </div>
             </div>
           </div>
-          <div class="container">
+          <div class="container" id="intro">
             <div class="resume__block">
               <div class="intro">
                 <div class="intro__icon-wrapper">
@@ -151,7 +184,7 @@
               </div>
             </div>
           </div>
-          <div class="container">
+          <div class="container" id="skills-container">
             <div class="resume__block">
               <div class="skills">
                 <h3 class="skills__header animation__color">Skills</h3>
@@ -230,7 +263,7 @@
               </div>
             </div>
           </div>
-          <div class="container">
+          <div class="container" id="experiences">
             <div class="resume__block">
               <div class="main-info fh">
                 <div class="experiences">
@@ -274,7 +307,7 @@
                   </div>
                 </div>
 
-                <div class="additional-info fv">
+                <div class="additional-info fv" id="education">
                   <div class="additional-info fv">
                     <div class="additional-info__education">
                       <h3
@@ -316,7 +349,7 @@
                     </div>
                   </div>
 
-                  <div class="additional-info__languages">
+                  <div class="additional-info__languages" id="languages">
                     <h3
                       class="additional-info__languages-header animation__color"
                     >
@@ -333,7 +366,7 @@
               </div>
             </div>
           </div>
-          <div class="container">
+          <div class="container" id="project-experiences">
             <div class="resume__block">
               <h3 class="animation__color">Project experience</h3>
               <ul class="project__list">
@@ -432,7 +465,7 @@
               </p>
             </div>
           </div>
-          <div class="container">
+          <div class="container" id="additional-education">
             <div class="resume__block">
               <div class="additional-info fv">
                 <div class="additional-info__education">
@@ -490,7 +523,7 @@
               </div>
             </div>
           </div>
-          <div class="container">
+          <div class="container" id="timeline">
             <div class="resume__block">
               <h3 class="additional-info__education-heade animation__color">
                 Timeline
@@ -533,7 +566,9 @@
       </div>
     </main>
     <footer className="footer">
-      <div class="footer__container"><p>&copy; 2023 All rights reserved.</p></div>
+      <div class="footer__container">
+        <p>&copy; 2023 All rights reserved.</p>
+      </div>
     </footer>
     <script src="./index.js"></script>
   </body>
