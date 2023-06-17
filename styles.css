@@ -126,10 +126,7 @@ svg {
 }
 
 .header__container {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 10px 5px;
 }
 
 .header__container {
@@ -287,9 +284,8 @@ svg {
 
 .skills__list {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   gap: 10px;
-  flex-wrap: wrap;
   text-align: left;
   margin-left: 50px;
 }
@@ -488,11 +484,10 @@ color: var(--durability-text-color);
 .timeline-horizontal {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: flex-start;
   padding: 0;
-  flex-wrap: wrap;
 }
 
 .timeline-item {
