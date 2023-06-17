@@ -418,3 +418,9 @@ color: var(--durability-text-color);
 .project__list h4:hover {
   color: rgb(20, 212, 212);
 }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
