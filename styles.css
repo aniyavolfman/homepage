@@ -54,6 +54,7 @@ img {
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
+  cursor: url('./public/images/cursor.png'), auto;
 
   --primary-text-color: #181820;
   --secondary-text-color: #22222f;
