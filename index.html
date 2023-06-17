@@ -1,10 +1,575 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Résumé</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <header class="header" id="up">
+      <div class="header__container">
+        <nav>
+          <ul class="header_list">
+            <li class="header_list-item">
+              <a href="#intro" class="header__link">Intro</a>
+            </li>
+            <li class="header_list-item">
+              <a href="#skills-container" class="header__link">Skills</a>
+            </li>
+            <li class="header_list-item">
+              <a href="#experiences" class="header__link">Experience</a>
+            </li>
+            <li class="header_list-item">
+              <a href="#education" class="header__link">Education</a>
+            </li>
+            <li class="header_list-item">
+              <a href="#languages" class="header__link">Languages</a>
+            </li>
+            <li class="header_list-item">
+              <a href="#project-experiences" class="header__link">Project experience</a>
+            </li>
+            <li class="header_list-item">
+              <a href="#additional-education" class="header__link">Additional education</a>
+            </li>
+            <li class="header_list-item">
+              <a href="#timeline" class="header__link">Timeline</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div><a href="#up" class="anchor link">Up!</a></div>
+      <div class="resume">
+        <div class="container">
+          <div class="resume__block">
+            <h1 class="contact-info__header">Anna Volfman</h1>
+            <h2 class="contact-info__sub-header animation__color">
+              Full-Stack Developer
+            </h2>
+
+            <div class="contact_info_container fh">
+              <div class="contact-info__block">
+                <ul>
+                  <li class="contact-info__list-item">
+                    <svg width="25" height="25">
+                      <use
+                        href="./public/images/symbol-defs.svg#icon-location-dot-solid"
+                      ></use>
+                    </svg>
+                    Kyiv, Ukraine
+                  </li>
+                  <li class="contact-info__list-item">
+                    <a
+                      href="https://www.linkedin.com/in/volfmananna/"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow author"
+                      class="contact-info__link"
+                      ><svg width="25" height="25">
+                        <use
+                          href="./public/images/symbol-defs.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                      Anna Volfman</a
+                    >
+                  </li>
+                  <li class="contact-info__list-item">
+                    <a
+                      href="https://t.me/aniyavolfman"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow author"
+                      class="contact-info__link"
+                      ><svg width="25" height="25">
+                        <use
+                          href="./public/images/symbol-defs.svg#icon-telegram"
+                        ></use>
+                      </svg>
+                      &#64;aniyavolfman</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contact-info__block contact-info__block--center">
+                <img
+                  class="contact-info__avatar"
+                  src="./public/images/avatar.jpg"
+                  alt="Avatar"
+                />
+              </div>
+
+              <div class="contact-info__block">
+                <ul>
+                  <li class="contact-info__list-item">
+                    <a
+                      href="https://github.com/aniyavolfman"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow author"
+                      class="contact-info__link"
+                      ><svg width="25" height="25">
+                        <use
+                          href="./public/images/symbol-defs.svg#icon-github"
+                        ></use>
+                      </svg>
+                      aniyavolfman</a
+                    >
+                  </li>
+                  <li class="contact-info__list-item">
+                    <a
+                      href="https://aniyavolfman.github.io/portfolio/"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow author"
+                      class="contact-info__link"
+                      ><svg width="25" height="25">
+                        <use
+                          href="./public/images/symbol-defs.svg#icon-star-full"
+                        ></use>
+                      </svg>
+                      Portfolio</a
+                    >
+                  </li>
+                  <li class="contact-info__list-item">
+                    <a href="mailto:aniya_07@ukr.net" class="contact-info__link"
+                      ><svg width="25" height="25">
+                        <use
+                          href="./public/images/symbol-defs.svg#icon-envelop"
+                        ></use>
+                      </svg>
+                      aniya_07&#64;ukr.net</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="container" id="intro">
+            <div class="resume__block">
+              <div class="intro">
+                <div class="intro__icon-wrapper">
+                  <svg
+                    class="intro__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="intro_text">
+                  I am a highly motivated full-stack developer who is deeply
+                  passionate about my craft: I love building websites and
+                  writing code. I also like detectives and solving puzzles -
+                  that's why I was delighted with Binary Studio Quest. It is
+                  important for me not to stand still and not stop at what I
+                  have achieved, so I'm constantly working to improve my skills
+                  and keep up with the times. I'm here to have a good time, gain
+                  new knowledge and, as a result, get a job in a team of
+                  talented and creative people, where I can use my skills and
+                  knowledge to deliver good results in the long term (where,
+                  perhaps, I might be able to meet Bulka in person). &#10024;
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container" id="skills-container">
+            <div class="resume__block">
+              <div class="skills">
+                <h3 class="skills__header animation__color">Skills</h3>
+                <label for="skills"
+                  >Select the type of skills you are interested in learning
+                  about:
+                </label>
+                <select name="skills" id="skills">
+                  <option value="empty">Select the type, pls &#x1F609;</option>
+                  <option value="hard">Hard Skills &#128050;</option>
+                  <option value="soft">Soft Skills &#128060;</option>
+                </select>
+                <div
+                  id="hardSkillsList"
+                  style="display: none"
+                  class="skills__wrapper"
+                >
+                  <b class="skills__type">Hard Skills:</b>
+                  <ul class="skills__list">
+                    <li>
+                      <p>HTML5;</p>
+                    </li>
+                    <li>
+                      <p>CSS3;</p>
+                    </li>
+                    <li>
+                      <p>JavaScript;</p>
+                    </li>
+                    <li>
+                      <p>Node.js;</p>
+                    </li>
+                    <li>
+                      <p>React;</p>
+                    </li>
+                    <li>
+                      <p>Next.js 13;</p>
+                    </li>
+                    <li>
+                      <p>Redux Toolkit;</p>
+                    </li>
+                    <li>
+                      <p>TypeScript - in progress;</p>
+                    </li>
+                    <li>
+                      <p>Rest API;</p>
+                    </li>
+                    <li>
+                      <p>GIT.</p>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  id="softSkillsList"
+                  style="display: none"
+                  class="skills__wrapper"
+                >
+                  <b class="skills__type">Soft Skills:</b>
+                  <ul class="skills__list">
+                    <li>
+                      <p>
+                        Continuous learning and adaptability to new technologies
+                        and frameworks;
+                      </p>
+                    </li>
+                    <li>
+                      <p>Accurate;</p>
+                    </li>
+                    <li>
+                      <p>Positive attitude;</p>
+                    </li>
+                    <li>
+                      <p>Strong problem-solving and analytical skills.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container" id="experiences">
+            <div class="resume__block">
+              <div class="main-info fh">
+                <div class="experiences">
+                  <h3 class="experiences__header animation__color">
+                    Experience
+                  </h3>
+                  <div class="experiences__company">
+                    <div class="experiences__company-header">
+                      <span class="experiences__company-header-durability"
+                        >Apr 2023 - May 2023
+                      </span>
+                      <h3 class="experiences__company-header-name">
+                        Kharkiv IT Cluster
+                      </h3>
+                    </div>
+
+                    <div class="experiences__company-project">
+                      <span class="experiences__company-project-role"
+                        >Front-end developer</span
+                      >
+                      <h3 class="experiences__company-project-name">
+                        Charity project
+                      </h3>
+                      <p>
+                        I developed a responsive and adaptive
+                        <a
+                          href="https://www.go-volonteer.in.ua/"
+                          target="_blank"
+                          rel="noopener noreferrer nofollow author"
+                          class="experiences__link"
+                          >site for volunteers</a
+                        >. Collaborated closely with developers, designers, QA
+                        and PM. We used SASS, Parcel, Git, WordPress, BEM and
+                        SCRUM methodologies. The goal of this project was to
+                        help Ukrainian volunteers and non-profit organizations
+                        to fill in their financial documentation correctly and
+                        guide them on conducting their activity following
+                        Ukrainian law.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="additional-info fv" id="education">
+                  <div class="additional-info fv">
+                    <div class="additional-info__education">
+                      <h3
+                        class="additional-info__education-heade animation__color"
+                      >
+                        Education
+                      </h3>
+                      <div class="additional-info__education-university">
+                        <p
+                          class="additional-info__education-university-durability"
+                        >
+                          10.2022-03.2023
+                        </p>
+                        <h3
+                          class="additional-info__education-university-speciality"
+                        >
+                          Full-Stack Developer
+                        </h3>
+                        <p class="additional-info__education-university-name">
+                          IT School GoIT
+                        </p>
+                      </div>
+                      <div class="additional-info__education-university">
+                        <p
+                          class="additional-info__education-university-durability"
+                        >
+                          09.2009-06.2014
+                        </p>
+                        <h3
+                          class="additional-info__education-university-speciality"
+                        >
+                          Master of Accounting and Auditing
+                        </h3>
+                        <p class="additional-info__education-university-name">
+                          Kyiv national university of trade and economics
+                          (KNUTE)
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="additional-info__languages" id="languages">
+                    <h3
+                      class="additional-info__languages-header animation__color"
+                    >
+                      Languages
+                    </h3>
+                    <p class="additional-info__languages-item">
+                      <b>English</b> - Upper - Intermediate;
+                    </p>
+                    <p class="additional-info__languages-item">
+                      <b>Ukrainian</b> - Native
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container" id="project-experiences">
+            <div class="resume__block">
+              <h3 class="animation__color">Project experience</h3>
+              <ul class="project__list">
+                <li>
+                  <h4>
+                    <a
+                      href="https://promptopia-eight-sigma.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      >Promptopia</a
+                    >
+                  </h4>
+                  <p>
+                    <b>Technology stack: </b>JavaScript, Next.js 13, Node.js,
+                    React, MongoDB, CORS, Mongoose, Tailwindcss, REST API, GIT.
+                  </p>
+                  <p>
+                    Promptopia is an open-source AI prompting full-stack tool
+                    for the modern world. It provides users with the ability to
+                    discover, create, and share creative prompts to inspire
+                    their writing and brainstorming sessions.
+                    <a
+                      href="https://github.com/aniyavolfman/promptopia"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      class="experiences__link"
+                      >GitHub</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <h4>
+                    <a
+                      href="https://aniyavolfman.github.io/health-app-project/"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      >SlimMom</a
+                    >
+                  </h4>
+                  <p>
+                    <b>Technology stack: </b>React, Redux Toolkit, HTML, SASS,
+                    JavaScript, Adaptive/Responsive design, REST API, GIT.
+                  </p>
+                  <p>
+                    It's a calorie app that includes a food diary and a
+                    nutrition database. I was the Team Lead of a team of 9
+                    developers. Also, as a Front-End developer, I was
+                    responsible for API, displaying the calorie norm and not
+                    recommended products, markup of the Calculator page.
+                    <a
+                      href="https://github.com/aniyavolfman/health-app-project"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      class="experiences__link"
+                      >GitHub</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <h4>
+                    <a
+                      href="https://aniyavolfman.github.io/filmoteka/"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      >Filmoteka</a
+                    >
+                  </h4>
+                  <p>
+                    <b>Technology stack: </b> HTML, SASS, JavaScript, Parcel,
+                    Adaptive/Responsive design, REST API, GIT.
+                  </p>
+                  <p>
+                    A site for searching films. In this team project I was
+                    responsible for loading popular movies to the main page,
+                    searching and loading films by a query, pagination on the
+                    main page and library.
+                    <a
+                      href="https://github.com/aniyavolfman/filmoteka/"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      class="experiences__link"
+                      >GitHub</a
+                    >
+                  </p>
+                </li>
+              </ul>
+              <p>
+                Other projects you can see in the
+                <a
+                  href="https://aniyavolfman.github.io/portfolio/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="experiences__link"
+                  >portfolio.</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="container" id="additional-education">
+            <div class="resume__block">
+              <div class="additional-info fv">
+                <div class="additional-info__education">
+                  <h3 class="additional-info__education-heade animation__color">
+                    Additional education
+                  </h3>
+                  <div class="flex">
+                    <div class="additional-info__education-university">
+                      <p
+                        class="additional-info__education-university-durability"
+                      >
+                        05-06.2023
+                      </p>
+                      <h3
+                        class="additional-info__education-university-speciality"
+                      >
+                        Basics of AI
+                      </h3>
+                      <p class="additional-info__education-university-name">
+                        Google
+                      </p>
+                    </div>
+                    <div class="additional-info__education-university">
+                      <p
+                        class="additional-info__education-university-durability"
+                      >
+                        07-10.2022
+                      </p>
+                      <h3
+                        class="additional-info__education-university-speciality"
+                      >
+                        Front-End development
+                      </h3>
+                      <p class="additional-info__education-university-name">
+                        Prometheus
+                      </p>
+                    </div>
+                    <div class="additional-info__education-university">
+                      <p
+                        class="additional-info__education-university-durability"
+                      >
+                        05-06.2022
+                      </p>
+                      <h3
+                        class="additional-info__education-university-speciality"
+                      >
+                        Basics of Web UI development
+                      </h3>
+                      <p class="additional-info__education-university-name">
+                        Prometheus
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container" id="timeline">
+            <div class="resume__block">
+              <h3 class="additional-info__education-heade animation__color">
+                Timeline
+              </h3>
+              <div class="timeline-horizontal">
+                <div class="timeline-item">
+                  <div class="timeline-content">
+                    <p class="timeline-title">Graduated from school</p>
+                  </div>
+                  <span class="timeline-date">2009</span>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-content">
+                    <p class="timeline-title">Graduated from university</p>
+                    <p>Started working as an accountant.</p>
+                  </div>
+                  <span class="timeline-date">2014</span>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-content">
+                    <p class="timeline-title">Decided to switch to IT</p>
+                    <p>Start education in IT.</p>
+                  </div>
+                  <span class="timeline-date">2022</span>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-content">
+                    <p class="timeline-title">Finish IT Curses</p>
+                    <p>First charity project;</p>
+                    <p>9 pet projects;</p>
+                    <p>New community, new possibilities;</p>
+                    <p>Continue studying.</p>
+                  </div>
+                  <span class="timeline-date">2023</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <p>&copy; 2023 All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
