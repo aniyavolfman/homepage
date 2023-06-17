@@ -490,3 +490,10 @@ color: var(--durability-text-color);
   border-top: 10px solid #c3236b;
   transform: translateX(50%);
 }
+
+.footer__container {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+}
